@@ -29,16 +29,12 @@
             </exclusions>
         </dependency>
 
-        <!-- 通用工具-->
+        <!-- 通用工具 -->
         <dependency>
             <groupId>com.qst</groupId>
             <artifactId>qst-common</artifactId>
         </dependency>
 
-        <dependency>
-            <groupId>com.qst</groupId>
-            <artifactId>qst-system</artifactId>
-        </dependency>
         <dependency>
             <groupId>com.qst</groupId>
             <artifactId>qst-system</artifactId>

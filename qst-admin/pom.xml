@@ -24,7 +24,7 @@
             <optional>true</optional> <!-- 表示依赖不会传递 -->
         </dependency>
 
-        <!-- swagger3-->
+        <!-- swagger3 -->
         <dependency>
             <groupId>io.springfox</groupId>
             <artifactId>springfox-boot-starter</artifactId>
@@ -43,22 +43,28 @@
             <artifactId>mysql-connector-java</artifactId>
         </dependency>
 
-        <!-- 核心模块-->
+        <!-- 核心模块 -->
         <dependency>
             <groupId>com.qst</groupId>
             <artifactId>qst-framework</artifactId>
         </dependency>
 
-        <!-- 定时任务-->
+        <!-- 定时任务 -->
         <dependency>
             <groupId>com.qst</groupId>
             <artifactId>qst-quartz</artifactId>
         </dependency>
 
-        <!-- 代码生成-->
+        <!-- 代码生成 -->
         <dependency>
             <groupId>com.qst</groupId>
             <artifactId>qst-generator</artifactId>
+        </dependency>
+
+        <!-- 贷款审批 -->
+        <dependency>
+            <groupId>com.qst</groupId>
+            <artifactId>qst-loan</artifactId>
         </dependency>
 
     </dependencies>

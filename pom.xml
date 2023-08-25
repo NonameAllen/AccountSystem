@@ -205,6 +205,13 @@
                 <version>${qst.version}</version>
             </dependency>
 
+            <!-- 贷款审批 -->
+            <dependency>
+                <groupId>com.qst</groupId>
+                <artifactId>qst-loan</artifactId>
+                <version>${qst.version}</version>
+            </dependency>
+
             <dependency>
               <groupId>org.springframework.cloud</groupId>
               <artifactId>spring-cloud-dependencies</artifactId>
@@ -223,6 +230,7 @@
         <module>qst-quartz</module>
         <module>qst-generator</module>
         <module>qst-common</module>
+        <module>qst-loan</module>
     </modules>
     <packaging>pom</packaging>
 

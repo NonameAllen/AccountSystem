@@ -89,7 +89,7 @@
             <artifactId>snakeyaml</artifactId>
         </dependency>
 
-        <!--Token生成与解析-->
+        <!-- Token生成与解析 -->
         <dependency>
             <groupId>io.jsonwebtoken</groupId>
             <artifactId>jjwt</artifactId>
@@ -119,7 +119,7 @@
             <artifactId>javax.servlet-api</artifactId>
         </dependency>
 
-        <!-- swagger3-->
+        <!-- swagger3 -->
         <dependency>
             <groupId>io.springfox</groupId>
             <artifactId>springfox-boot-starter</artifactId>

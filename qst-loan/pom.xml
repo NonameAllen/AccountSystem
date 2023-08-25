@@ -1,18 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
     <parent>
         <artifactId>qst</artifactId>
         <groupId>com.qst</groupId>
         <version>3.6.0</version>
     </parent>
-    <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>qst-system</artifactId>
+    <artifactId>qst-loan</artifactId>
 
     <description>
-        system系统模块
+        loan贷款审批
     </description>
 
     <dependencies>
@@ -21,6 +20,13 @@
         <dependency>
             <groupId>com.qst</groupId>
             <artifactId>qst-common</artifactId>
+        </dependency>
+
+        <!-- 系统模块-->
+        <dependency>
+            <groupId>com.qst</groupId>
+            <artifactId>qst-system</artifactId>
+            <version>${qst.version}</version>
         </dependency>
 
         <dependency>
@@ -38,6 +44,10 @@
                     <artifactId>swagger-models</artifactId>
                 </exclusion>
             </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
         </dependency>
 
     </dependencies>

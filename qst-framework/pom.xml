@@ -59,7 +59,7 @@
             <artifactId>oshi-core</artifactId>
         </dependency>
 
-        <!-- 系统模块-->
+        <!-- 系统模块 -->
         <dependency>
             <groupId>com.qst</groupId>
             <artifactId>qst-system</artifactId>
