@@ -6,7 +6,7 @@ import org.apache.ibatis.annotations.Mapper;
 import java.util.List;
 
 /**
- * 企业详情Mapper接口
+ * 企业详情 Mapper接口
  *
  * @author qst
  * @version 1.0.0
