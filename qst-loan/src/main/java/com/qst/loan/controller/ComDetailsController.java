@@ -25,7 +25,7 @@ import java.util.List;
 /**
  * 企业详情Controller
  *
- * @author qst
+ * @author ljx
  * @version 1.0.0
  */
 @Api("企业详情控制类")
