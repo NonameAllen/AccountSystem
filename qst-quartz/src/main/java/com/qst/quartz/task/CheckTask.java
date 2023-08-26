@@ -1,11 +1,11 @@
 package com.qst.quartz.task;
 
-import com.qst.system.domain.Loans;
-import com.qst.system.domain.Overdue;
-import com.qst.system.domain.Refund;
-import com.qst.system.service.ILoansService;
-import com.qst.system.service.IOverdueService;
-import com.qst.system.service.IRefundService;
+import com.qst.loan.domain.Loans;
+import com.qst.loan.domain.Overdue;
+import com.qst.loan.domain.Refund;
+import com.qst.loan.service.ILoansService;
+import com.qst.loan.service.IOverdueService;
+import com.qst.loan.service.IRefundService;
 import com.qst.system.util.ConstUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
