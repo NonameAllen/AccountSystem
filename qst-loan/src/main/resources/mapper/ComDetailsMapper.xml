@@ -2,7 +2,7 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.qst.system.mapper.ComDetailsMapper">
+<mapper namespace="com.qst.loan.mapper.ComDetailsMapper">
 
     <resultMap type="ComDetails" id="ComDetailsResult">
         <result property="cId" column="c_id"/>

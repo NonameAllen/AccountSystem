@@ -2,7 +2,7 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.qst.system.mapper.CompanyMapper">
+<mapper namespace="com.qst.loan.mapper.CompanyMapper">
 
     <!--查询所有的企业id-->
     <select id="selectAllComIds" resultType="int">
