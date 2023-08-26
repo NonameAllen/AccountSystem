@@ -40,6 +40,11 @@
             <artifactId>qst-system</artifactId>
         </dependency>
 
+        <dependency>
+            <groupId>com.qst</groupId>
+            <artifactId>qst-loan</artifactId>
+        </dependency>
+
     </dependencies>
 
 </project>

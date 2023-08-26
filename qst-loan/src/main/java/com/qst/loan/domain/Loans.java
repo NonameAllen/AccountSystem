@@ -1,23 +1,25 @@
 package com.qst.loan.domain;
 
-
 import java.util.Date;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
-import lombok.Data;
 import org.apache.commons.lang3.builder.ToStringBuilder;
 import org.apache.commons.lang3.builder.ToStringStyle;
 import com.qst.common.annotation.Excel;
 import com.qst.common.core.domain.BaseEntity;
+
 /**
- * @author:Allen
- * @create: 2023-08-26 16:20
- * @Description: 贷款对象 loans
+ * 贷款对象 loans
+ *
+ * @author hxy
+ * @date 2023-09-24
  */
 @ApiModel("贷款实体类")
-@Data
-public class Loans extends BaseEntity{
+public class Loans extends BaseEntity
+{
+    private static final long serialVersionUID = 1L;
+
     /** id */
     @ApiModelProperty("主键")
     private Long loaId;
@@ -107,22 +109,198 @@ public class Loans extends BaseEntity{
 
     private Bank bank;
 
+    // 2022.7.14 平台“待签约->待放款”流程中，需要企业用户上传签约报告，平台端才能修改状态为放款
+    private String loaSign;// 签约材料
+    public String getLoaSign() {
+        return loaSign;
+    }
+
+    public void setLoaSign(String loaSign) {
+        this.loaSign = loaSign;
+    }
+
+
+
+    public void setLoaId(Long loaId)
+    {
+        this.loaId = loaId;
+    }
+
+    public Long getLoaId()
+    {
+        return loaId;
+    }
+    public void setLoaComNo(Long loaComNo)
+    {
+        this.loaComNo = loaComNo;
+    }
+
+    public Long getLoaComNo()
+    {
+        return loaComNo;
+    }
+    public void setLoaBankId(Long loaBankId)
+    {
+        this.loaBankId = loaBankId;
+    }
+
+    public Long getLoaBankId()
+    {
+        return loaBankId;
+    }
+    public void setLoaLisId(Long loaLisId)
+    {
+        this.loaLisId = loaLisId;
+    }
+
+    public Long getLoaLisId()
+    {
+        return loaLisId;
+    }
+    public void setLoaUse(String loaUse)
+    {
+        this.loaUse = loaUse;
+    }
+
+    public String getLoaUse()
+    {
+        return loaUse;
+    }
+    public void setLoaIntegral(String loaIntegral)
+    {
+        this.loaIntegral = loaIntegral;
+    }
+
+    public String getLoaIntegral()
+    {
+        return loaIntegral;
+    }
+    public void setLoaRate(String loaRate)
+    {
+        this.loaRate = loaRate;
+    }
+
+    public String getLoaRate()
+    {
+        return loaRate;
+    }
+    public void setLoaState(String loaState)
+    {
+        this.loaState = loaState;
+    }
+
+    public String getLoaState()
+    {
+        return loaState;
+    }
+    public void setLoaTime(Date loaTime)
+    {
+        this.loaTime = loaTime;
+    }
+
+    public Date getLoaTime()
+    {
+        return loaTime;
+    }
+    public void setLoaMoney(Long loaMoney)
+    {
+        this.loaMoney = loaMoney;
+    }
+
+    public Long getLoaMoney()
+    {
+        return loaMoney;
+    }
+    public void setLoaDel(String loaDel)
+    {
+        this.loaDel = loaDel;
+    }
+
+    public String getLoaDel()
+    {
+        return loaDel;
+    }
+
+    public String getLoaNo() {
+        return loaNo;
+    }
+
+    public void setLoaNo(String loaNo) {
+        this.loaNo = loaNo;
+    }
+
+    public Date getLoaEndTime() {
+        return loaEndTime;
+    }
+
+    public void setLoaEndTime(Date loaEndTime) {
+        this.loaEndTime = loaEndTime;
+    }
+
+    public Company getCompany() {
+        return company;
+    }
+
+    public void setCompany(Company company) {
+        this.company = company;
+    }
+
+    public Bank getBank() {
+        return bank;
+    }
+
+    public void setBank(Bank bank) {
+        this.bank = bank;
+    }
+
+    public String getbAccountNo() {
+        return bAccountNo;
+    }
+
+    public void setbAccountNo(String bAccountNo) {
+        this.bAccountNo = bAccountNo;
+    }
+
+    public String getbName() {
+        return bName;
+    }
+
+    public void setbName(String bName) {
+        this.bName = bName;
+    }
+
+    public String getbBankName() {
+        return bBankName;
+    }
+
+    public void setbBankName(String bBankName) {
+        this.bBankName = bBankName;
+    }
+
+    public String getbIdCard() {
+        return bIdCard;
+    }
+
+    public void setbIdCard(String bIdCard) {
+        this.bIdCard = bIdCard;
+    }
+
     @Override
     public String toString() {
         return new ToStringBuilder(this,ToStringStyle.MULTI_LINE_STYLE)
-                .append("loaId", getLoaId())
-                .append("loaNo", getLoaNo())
-                .append("loaComNo", getLoaComNo())
-                .append("loaBankId", getLoaBankId())
-                .append("loaLisId", getLoaLisId())
-                .append("loaUse", getLoaUse())
-                .append("loaIntegral", getLoaIntegral())
-                .append("loaRate", getLoaRate())
-                .append("loaState", getLoaState())
-                .append("loaTime", getLoaTime())
-                .append("loaMoney", getLoaMoney())
-                .append("loaEndTime", getLoaEndTime())
-                .append("loaDel", getLoaDel())
-                .toString();
+            .append("loaId", getLoaId())
+            .append("loaNo", getLoaNo())
+            .append("loaComNo", getLoaComNo())
+            .append("loaBankId", getLoaBankId())
+            .append("loaLisId", getLoaLisId())
+            .append("loaUse", getLoaUse())
+            .append("loaIntegral", getLoaIntegral())
+            .append("loaRate", getLoaRate())
+            .append("loaState", getLoaState())
+            .append("loaTime", getLoaTime())
+            .append("loaMoney", getLoaMoney())
+            .append("loaEndTime", getLoaEndTime())
+            .append("loaDel", getLoaDel())
+            .toString();
     }
 }
