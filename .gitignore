@@ -1,4 +1,5 @@
 /.idea/
+/logs/
 /qst-admin/target/
 /qst-common/target/
 /qst-framework/target/
