@@ -7,6 +7,7 @@ import com.qst.common.core.domain.entity.Cities;
 import com.qst.common.core.domain.entity.Provinces;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
+import lombok.Data;
 import org.apache.commons.lang3.builder.ToStringBuilder;
 import org.apache.commons.lang3.builder.ToStringStyle;
 
@@ -16,6 +17,8 @@ import org.apache.commons.lang3.builder.ToStringStyle;
  * @author hxy
  * @date 2023-08-22
  */
+
+@Data
 @ApiModel("银行实体类")
 public class Bank extends BaseEntity
 {
@@ -86,138 +89,6 @@ public class Bank extends BaseEntity
 
     /**注册区**/
     private Areas areas;
-
-    public void setBankId(Long bankId) 
-    {
-        this.bankId = bankId;
-    }
-
-    public Long getBankId() 
-    {
-        return bankId;
-    }
-    public void setBankEmail(String bankEmail) 
-    {
-        this.bankEmail = bankEmail;
-    }
-
-    public String getBankName() {
-        return bankName;
-    }
-
-    public void setBankName(String bankName) {
-        this.bankName = bankName;
-    }
-
-    public String getBankEmail()
-    {
-        return bankEmail;
-    }
-    public void setBankPassword(String bankPassword) 
-    {
-        this.bankPassword = bankPassword;
-    }
-
-    public String getBankPassword() 
-    {
-        return bankPassword;
-    }
-    public void setBankRate(String bankRate) 
-    {
-        this.bankRate = bankRate;
-    }
-
-    public String getBankRate() 
-    {
-        return bankRate;
-    }
-    public void setBankPhone(String bankPhone) 
-    {
-        this.bankPhone = bankPhone;
-    }
-
-    public String getBankPhone() 
-    {
-        return bankPhone;
-    }
-    public void setBankLength(String bankLength) 
-    {
-        this.bankLength = bankLength;
-    }
-
-    public String getBankLength() 
-    {
-        return bankLength;
-    }
-    public void setBankProId(String bankProId) 
-    {
-        this.bankProId = bankProId;
-    }
-
-    public String getBankProId() 
-    {
-        return bankProId;
-    }
-    public void setBankCitId(String bankCitId) 
-    {
-        this.bankCitId = bankCitId;
-    }
-
-    public String getBankCitId() 
-    {
-        return bankCitId;
-    }
-    public void setBankAraId(String bankAraId) 
-    {
-        this.bankAraId = bankAraId;
-    }
-
-    public String getBankAraId() 
-    {
-        return bankAraId;
-    }
-    public void setBankAdress(String bankAdress) 
-    {
-        this.bankAdress = bankAdress;
-    }
-
-    public String getBankAdress() 
-    {
-        return bankAdress;
-    }
-    public void setBankDel(String bankDel) 
-    {
-        this.bankDel = bankDel;
-    }
-
-    public String getBankDel() 
-    {
-        return bankDel;
-    }
-
-    public Provinces getProvinces() {
-        return provinces;
-    }
-
-    public void setProvinces(Provinces provinces) {
-        this.provinces = provinces;
-    }
-
-    public Cities getCities() {
-        return cities;
-    }
-
-    public void setCities(Cities cities) {
-        this.cities = cities;
-    }
-
-    public Areas getAreas() {
-        return areas;
-    }
-
-    public void setAreas(Areas areas) {
-        this.areas = areas;
-    }
 
     @Override
     public String toString() {
