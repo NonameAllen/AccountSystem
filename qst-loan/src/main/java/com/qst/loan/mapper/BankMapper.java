@@ -1,20 +1,21 @@
 package com.qst.loan.mapper;
 
-import com.qst.loan.domain.Bank;
-
 import java.util.List;
 
+import com.qst.loan.domain.Bank;
+import org.apache.ibatis.annotations.Mapper;
+
 /**
- * 银行Mapper接口
- * 
- * @author 胡新宇
- * @date 2023-08-22
+ * 银行 Mapper接口
+ *
+ * @author qst
+ * @version 1.0.0
  */
-public interface BankMapper 
-{
+@Mapper
+public interface BankMapper {
     /**
      * 查询银行
-     * 
+     *
      * @param bankId 银行主键
      * @return 银行
      */
@@ -22,7 +23,7 @@ public interface BankMapper
 
     /**
      * 查询银行列表
-     * 
+     *
      * @param bank 银行
      * @return 银行集合
      */
@@ -30,7 +31,7 @@ public interface BankMapper
 
     /**
      * 新增银行
-     * 
+     *
      * @param bank 银行
      * @return 结果
      */
@@ -38,7 +39,7 @@ public interface BankMapper
 
     /**
      * 修改银行
-     * 
+     *
      * @param bank 银行
      * @return 结果
      */
@@ -46,7 +47,7 @@ public interface BankMapper
 
     /**
      * 删除银行
-     * 
+     *
      * @param bankId 银行主键
      * @return 结果
      */
@@ -54,7 +55,7 @@ public interface BankMapper
 
     /**
      * 批量删除银行
-     * 
+     *
      * @param bankIds 需要删除的数据主键集合
      * @return 结果
      */
@@ -62,7 +63,6 @@ public interface BankMapper
 
     /**
      * 查询所有银行
-     * @return
      */
     List<Bank> selectBankNames();
 }

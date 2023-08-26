@@ -10,14 +10,14 @@ import org.apache.commons.lang3.builder.ToStringBuilder;
 import org.apache.commons.lang3.builder.ToStringStyle;
 
 /**
- * company 实体类
+ * 企业 实体类
  *
  * @author qst
  * @version 1.0.0
  */
 @Getter
 @Setter
-@ApiModel("公司实体类")
+@ApiModel("企业实体类")
 public class Company extends BaseEntity {
     private static final long serialVersionUID = 1L;
 

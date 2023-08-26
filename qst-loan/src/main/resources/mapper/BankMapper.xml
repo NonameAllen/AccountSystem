@@ -2,7 +2,7 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.qst.system.mapper.BankMapper">
+<mapper namespace="com.qst.loan.mapper.BankMapper">
 
     <resultMap type="Bank" id="BankResult">
         <result property="bankId" column="bank_id"/>
@@ -36,10 +36,10 @@
     </resultMap>
 
     <resultMap type="Areas" id="AreasResult">
-        <result property="id"    column="id"    />
-        <result property="areaid"    column="areaid"    />
-        <result property="area"    column="area"    />
-        <result property="cityid"    column="cityid"    />
+        <result property="id" column="id"/>
+        <result property="areaid" column="areaid"/>
+        <result property="area" column="area"/>
+        <result property="cityid" column="cityid"/>
     </resultMap>
 
     <sql id="selectBankVo">
@@ -58,9 +58,10 @@
                province,
                city,
                area
-        from bank b LEFT JOIN provinces p on b.bank_pro_id = p.provinceid
-                    LEFT JOIN cities c on b.bank_cit_id = c.cityid
-                    LEFT JOIN areas a on b.bank_ara_id = a.areaid
+        from bank b
+                 LEFT JOIN provinces p on b.bank_pro_id = p.provinceid
+                 LEFT JOIN cities c on b.bank_cit_id = c.cityid
+                 LEFT JOIN areas a on b.bank_ara_id = a.areaid
     </sql>
 
     <select id="selectBankList" parameterType="Bank" resultMap="BankResult">

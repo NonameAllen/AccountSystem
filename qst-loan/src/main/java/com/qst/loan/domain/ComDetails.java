@@ -15,7 +15,7 @@ import org.apache.commons.lang3.builder.ToStringStyle;
 import java.util.Date;
 
 /**
- * 企业详情对象 com_details
+ * 企业详情 实体类
  *
  * @author qst
  * @version 1.0.0
