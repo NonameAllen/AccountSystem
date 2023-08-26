@@ -11,7 +11,7 @@
     </select>
 
 
-    <resultMap type="Company" id="CompanyResult">
+    <resultMap type="com.qst.loan.domain.Company" id="CompanyResult">
         <result property="comId" column="com_id"/>
         <result property="comNo" column="com_no"/>
         <result property="comName" column="com_name"/>
@@ -56,7 +56,7 @@
     </select>
 
 
-    <select id="selectCompanyList" parameterType="Company" resultMap="CompanyResult">
+    <select id="selectCompanyList" parameterType="com.qst.loan.domain.Company" resultMap="CompanyResult">
         <include refid="selectCompanyVo"/>
         <where>
             com_del = 0
@@ -76,7 +76,7 @@
         where com_id = #{comId}
     </select>
 
-    <insert id="insertCompany" parameterType="Company" useGeneratedKeys="true" keyProperty="comId">
+    <insert id="insertCompany" parameterType="com.qst.loan.domain.Company" useGeneratedKeys="true" keyProperty="comId">
         insert into company
         <trim prefix="(" suffix=")" suffixOverrides=",">
             <if test="comNo != null and comNo != ''">com_no,</if>
@@ -100,7 +100,7 @@
         </trim>
     </insert>
 
-    <update id="updateCompany" parameterType="Company">
+    <update id="updateCompany" parameterType="com.qst.loan.domain.Company">
         update company
         <trim prefix="SET" suffixOverrides=",">
             <if test="comNo != null and comNo != ''">com_no = #{comNo},</if>
