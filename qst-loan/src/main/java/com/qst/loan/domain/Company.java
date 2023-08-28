@@ -12,7 +12,7 @@ import org.apache.commons.lang3.builder.ToStringStyle;
 /**
  * 企业 实体类
  *
- * @author qst
+ * @author ljx
  * @version 1.0.0
  */
 @Getter

@@ -7,7 +7,7 @@ import java.util.List;
 /**
  * Company Service接口
  *
- * @author qst
+ * @author ljx
  * @version 1.0.0
  */
 public interface ICompanyService {

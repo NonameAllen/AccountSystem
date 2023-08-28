@@ -11,7 +11,7 @@ import java.util.List;
 /**
  * Company Service 业务层处理
  *
- * @author qst
+ * @author ljx
  * @version 1.0.0
  */
 @Service
