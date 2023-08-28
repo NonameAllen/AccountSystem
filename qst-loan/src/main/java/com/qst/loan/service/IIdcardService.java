@@ -7,7 +7,7 @@ import com.qst.loan.domain.Idcard;
  * 身份证识别Service接口
  * 
  * @author zpx
- * @date 2022-08-28
+ * @date 2023-08-28
  */
 public interface IIdcardService 
 {

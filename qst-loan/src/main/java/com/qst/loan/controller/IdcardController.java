@@ -28,8 +28,8 @@ import com.qst.common.core.page.TableDataInfo;
 /**
  * 身份证识别Controller
  * 
- * @author qst
- * @date 2022-06-28
+ * @author zpx
+ * @date 2023-08-28
  */
 @Api("身份识别控制类")
 @RestController
