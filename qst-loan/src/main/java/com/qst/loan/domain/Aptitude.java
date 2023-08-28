@@ -1,6 +1,7 @@
 package com.qst.loan.domain;
 
 import com.qst.common.annotation.Excel;
+import com.qst.common.core.domain.BaseEntity;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
@@ -14,7 +15,7 @@ import org.apache.commons.lang.builder.ToStringStyle;
  */
 @ApiModel("资质实体类")
 @Data
-public class Aptitude {
+public class Aptitude extends BaseEntity {
     private static final long serialVersionUID = 1L;
 
     /** id */
