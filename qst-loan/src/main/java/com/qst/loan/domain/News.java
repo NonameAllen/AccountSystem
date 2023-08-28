@@ -1,4 +1,4 @@
-package com.qst.system.domain;
+package com.qst.loan.domain;
 
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;

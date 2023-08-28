@@ -1,4 +1,4 @@
-package com.qst.system.mapper;
+package com.qst.loan.mapper;
 
 import java.util.List;
 import com.qst.loan.domain.News;

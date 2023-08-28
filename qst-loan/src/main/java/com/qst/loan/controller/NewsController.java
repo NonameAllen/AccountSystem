@@ -1,9 +1,9 @@
-package com.qst.system.controller;
+package com.qst.loan.controller;
 
 import java.util.List;
 
-import com.qst.system.domain.News;
-import com.qst.system.service.INewsService;
+import com.qst.loan.domain.News;
+import com.qst.loan.service.INewsService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiOperation;
