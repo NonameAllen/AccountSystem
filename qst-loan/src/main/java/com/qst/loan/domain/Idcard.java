@@ -11,7 +11,7 @@ import com.qst.common.core.domain.BaseEntity;
  * 身份证识别对象 idcard
  * 
  * @author zpx
- * @date 2022-08-28
+ * @date 2023-08-28
  */
 @ApiModel(description = "身份证识别对象")
 public class Idcard extends BaseEntity
