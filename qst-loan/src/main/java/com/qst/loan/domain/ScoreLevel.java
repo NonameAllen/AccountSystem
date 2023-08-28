@@ -8,13 +8,13 @@ import com.qst.common.annotation.Excel;
 import com.qst.common.core.domain.BaseEntity;
 
 /**
- * 用户积分对象 score
+ * 用户等级对象 score_level
  * 
- * @author zpx
- * @date 2023-08-28
+ * @author hxy
+ * @date 2023-08-27
  */
 @ApiModel(description = "用户积分对象")
-public class Score extends BaseEntity
+public class ScoreLevel extends BaseEntity
 {
     private static final long serialVersionUID = 1L;
 
@@ -37,10 +37,10 @@ public class Score extends BaseEntity
     @Excel(name = "积分值")
     private Long scoreNum;
 
-    /** 更新详情 */
-    @ApiModelProperty(value = "更新详情")
-    @Excel(name = "更新详情")
-    private String updateDetail;
+    /** 等级 */
+    @ApiModelProperty(value = "等级")
+    @Excel(name = "等级")
+    private String levelDetail;
 
     public void setScoreId(Long scoreId) 
     {
@@ -69,14 +69,14 @@ public class Score extends BaseEntity
     {
         return scoreNum;
     }
-    public void setUpdateDetail(String updateDetail) 
+    public void setLevelDetail(String levelDetail) 
     {
-        this.updateDetail = updateDetail;
+        this.levelDetail = levelDetail;
     }
 
-    public String getUpdateDetail() 
+    public String getLevelDetail() 
     {
-        return updateDetail;
+        return levelDetail;
     }
 
     @Override
@@ -86,8 +86,8 @@ public class Score extends BaseEntity
             .append("comId", getComId())
                 .append("comName", getComName())
             .append("scoreNum", getScoreNum())
+            .append("levelDetail", getLevelDetail())
             .append("updateTime", getUpdateTime())
-            .append("updateDetail", getUpdateDetail())
             .toString();
     }
 
