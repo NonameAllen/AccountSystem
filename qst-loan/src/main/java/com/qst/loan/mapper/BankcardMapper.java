@@ -1,6 +1,7 @@
 package com.qst.loan.mapper;
 
 import com.qst.loan.domain.Bankcard;
+import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;
 
@@ -9,6 +10,7 @@ import java.util.List;
  * @create: 2023-08-28 14:07
  * @Description: 银行卡识别信息Mapper接口
  */
+@Mapper
 public interface BankcardMapper {
     /**
      * 查询银行卡识别信息

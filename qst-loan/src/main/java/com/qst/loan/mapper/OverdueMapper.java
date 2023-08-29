@@ -2,6 +2,7 @@ package com.qst.loan.mapper;
 
 import java.util.List;
 import com.qst.loan.domain.Overdue;
+import org.apache.ibatis.annotations.Mapper;
 
 /**
  * 逾期Mapper接口
@@ -9,6 +10,7 @@ import com.qst.loan.domain.Overdue;
  * @author mcl
  * @date 2023-08-26
  */
+@Mapper
 public interface OverdueMapper
 {
     /*根据企业编号统计逾期次数*/

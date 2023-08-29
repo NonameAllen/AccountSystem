@@ -2,6 +2,7 @@ package com.qst.loan.mapper;
 
 import java.util.List;
 import com.qst.loan.domain.LevelReward;
+import org.apache.ibatis.annotations.Mapper;
 
 /**
  * level_rewardMapper接口
@@ -9,6 +10,7 @@ import com.qst.loan.domain.LevelReward;
  * @author zpx
  * @date 2023-08-28
  */
+@Mapper
 public interface LevelRewardMapper 
 {
     /**

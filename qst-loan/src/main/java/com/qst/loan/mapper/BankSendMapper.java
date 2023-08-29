@@ -10,6 +10,7 @@ import java.util.List;
  * @create: 2023-08-26 15:48
  * @Description: 放款Mapper接口
  */
+@Mapper
 public interface BankSendMapper {
     /**
      * 查询放款

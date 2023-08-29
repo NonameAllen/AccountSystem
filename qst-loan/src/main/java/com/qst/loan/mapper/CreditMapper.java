@@ -1,6 +1,7 @@
 package com.qst.loan.mapper;
 
 import com.qst.loan.domain.Credit;
+import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;
 
@@ -9,6 +10,7 @@ import java.util.List;
  * @create: 2023-08-28 14:41
  * @Description: 平台信用管理Mapper接口
  */
+@Mapper
 public interface CreditMapper {
     /*从平台信用列表中，查询出已经有的企业id*/
     public List<Integer> selectAllComIds();

@@ -2,6 +2,7 @@ package com.qst.loan.mapper;
 
 import java.util.List;
 import com.qst.loan.domain.Loans;
+import org.apache.ibatis.annotations.Mapper;
 
 /**
  * 贷款Mapper接口
@@ -9,6 +10,7 @@ import com.qst.loan.domain.Loans;
  * @author hxy
  * @date 2023-08-24
  */
+@Mapper
 public interface LoansMapper 
 {
     /*根据企业编号统计贷款总次数*/

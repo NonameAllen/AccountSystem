@@ -1,6 +1,7 @@
 package com.qst.loan.mapper;
 
 import com.qst.loan.domain.Facecheck;
+import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;
 
@@ -9,6 +10,7 @@ import java.util.List;
  * @create: 2023-08-28 10:18
  * @Description: 人脸识别记录Mapper接口
  */
+@Mapper
 public interface FacecheckMapper {
     /**
      * 查询人脸识别记录

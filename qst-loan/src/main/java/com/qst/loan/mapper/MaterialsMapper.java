@@ -2,6 +2,7 @@ package com.qst.loan.mapper;
 
 import java.util.List;
 import com.qst.loan.domain.Materials;
+import org.apache.ibatis.annotations.Mapper;
 
 /**
  * 材料Mapper接口
@@ -9,6 +10,7 @@ import com.qst.loan.domain.Materials;
  * @author hxy
  * @date 2023-08-26
  */
+@Mapper
 public interface MaterialsMapper 
 {
     /**

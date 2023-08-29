@@ -2,6 +2,7 @@ package com.qst.loan.mapper;
 
 import java.util.List;
 import com.qst.loan.domain.ScoreLevel;
+import org.apache.ibatis.annotations.Mapper;
 
 /**
  * 用户等级Mapper接口
@@ -9,6 +10,7 @@ import com.qst.loan.domain.ScoreLevel;
  * @author hxy
  * @date 2023-08-27
  */
+@Mapper
 public interface ScoreLevelMapper 
 {
     /**

@@ -2,6 +2,7 @@ package com.qst.loan.mapper;
 
 import java.util.List;
 import com.qst.loan.domain.Examine;
+import org.apache.ibatis.annotations.Mapper;
 
 /**
  * 审批Mapper接口
@@ -9,6 +10,7 @@ import com.qst.loan.domain.Examine;
  * @author hxy
  * @date 2023-08-25
  */
+@Mapper
 public interface ExamineMapper 
 {
     /**

@@ -2,6 +2,7 @@ package com.qst.loan.mapper;
 
 import java.util.List;
 import com.qst.loan.domain.News;
+import org.apache.ibatis.annotations.Mapper;
 
 /**
  * 宣传信息管理Mapper接口
@@ -9,6 +10,7 @@ import com.qst.loan.domain.News;
  * @author mcl
  * @date 2023-08-28
  */
+@Mapper
 public interface NewsMapper
 {
     /**

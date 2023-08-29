@@ -2,6 +2,7 @@ package com.qst.loan.mapper;
 
 import java.util.List;
 import com.qst.loan.domain.Activity;
+import org.apache.ibatis.annotations.Mapper;
 
 /**
  * 活动管理Mapper接口
@@ -9,6 +10,7 @@ import com.qst.loan.domain.Activity;
  * @author zpx
  * @date 2023-08-28
  */
+@Mapper
 public interface ActivityMapper 
 {
     /**

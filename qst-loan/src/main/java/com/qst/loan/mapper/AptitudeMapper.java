@@ -1,6 +1,7 @@
 package com.qst.loan.mapper;
 
 import com.qst.loan.domain.Aptitude;
+import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;
 
@@ -9,6 +10,7 @@ import java.util.List;
  * @create: 2023-08-28 09:58
  * @Description: 资质Mapper接口
  */
+@Mapper
 public interface AptitudeMapper {
     /**
      * 查询资质

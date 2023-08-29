@@ -2,6 +2,7 @@ package com.qst.loan.mapper;
 
 import java.util.List;
 import com.qst.loan.domain.Idcard;
+import org.apache.ibatis.annotations.Mapper;
 
 /**
  * 身份证识别Mapper接口
@@ -9,6 +10,7 @@ import com.qst.loan.domain.Idcard;
  * @author zpx
  * @date 2022-08-28
  */
+@Mapper
 public interface IdcardMapper 
 {
     /**

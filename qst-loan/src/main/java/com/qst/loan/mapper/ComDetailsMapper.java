@@ -9,7 +9,7 @@ import java.util.List;
 /**
  * 企业详情 Mapper接口
  *
- * @author qst
+ * @author ljx
  * @version 1.0.0
  */
 @Mapper
